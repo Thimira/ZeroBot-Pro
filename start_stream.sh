@@ -1,1 +1,1 @@
-LD_LIBRARY_PATH=/usr/local/lib/mjpg-streamer/ /usr/local/bin/mjpg_streamer -i "input_raspicam.so -vf -hf -fps 15 -q 50 -x 1280 -y 960 -rot 180" -o "output_http.so -p 9000 -w /usr/local/share/mjpg-streamer/www" > /dev/null 2>&1&
+LD_LIBRARY_PATH=/usr/local/lib/mjpg-streamer/ /usr/local/bin/mjpg_streamer -i "input_uvc.so -fps 15 -r 1280x960 -rot 180" -o "output_http.so -p 9000 -w /usr/local/share/mjpg-streamer/www" > /dev/null 2>&1&
